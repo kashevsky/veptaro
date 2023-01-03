@@ -19,7 +19,7 @@
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__list-item"><a class="nav__list-link" href="">Обо мне</a></li>
-                <li class="nav__list-item"><a class="nav__list-link" href="">Услуги</a></li>
+                <li class="nav__list-item"><a class="nav__list-link" href="#uslugi">Услуги</a></li>
                 <li class="nav__list-item"><a class="nav__list-link" href="">Отзывы</a></li>
                 <li class="nav__list-item"><a class="nav__list-link" href="">Контакты</a></li>
             </ul>
