@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none; 
+}
+/* header style */
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%,transparent 80%),radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    padding: 1vh 5vw;
+    font-family: "nav";
+}
+.logo{
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.logo__image{
+    width: 4.5vw;
+    margin-left: 0.5vw;
+}
+.nav__list {
+    display: flex;
+}
+.nav__list-item{
+    margin-right: 5vw;
+}
+.nav__list-link{
+    color: black;
+}
+.header-socials_image{
+    width: 3vw;
+}
+/* end header style */
+/* content style */
+.wrapper-top{
+    background-image: url('../img/background.jpg');   
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .wrapper-content{
+        text-align: center;
+    }
+    .wrapper-content__title{
+        padding-top: 5vh;
+        font-size: 7vh;
+    }
+    .button{
+        margin-top: 3vh;
+        color: black;
+        background-color: goldenrod;
+        text-align: center;
+        padding: 7px 10px 7px 10px;
+        border-radius: 5px;
+        font-family: "nav";
+        font-size: 2.3vh;
+    }
+    .wrapper-side{
+        background-image:url('../img/back.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-top: -1px;
+    }
+    .wrapper-side-content{
+        width: 65vw;
+        margin: 1px auto;
+        padding: 0vh 5vw;
+        background-color: white;
+    }
+    .catalog{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+    .title--h2{
+        text-align: center;
+        padding: 4vh 0 2vh 0;
+    }
+    .catalog__item{
+        width: 31vw;
+        text-align: center;
+    }
+    .catalog__img{
+        width: 26vw;
+    }
+    .video{
+        text-align: center;
+        padding: 8vh 0;
+    }
+    #video_background2{
+        width: 50vw;
+    }
+    .wrapper-side-content--borders{
+        background-color: white;
+        border-radius: 10px;
+        width: 70vw;
+        margin: 1px auto;
+        padding: 0vh 5vw;
+    }
+    .text{
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-bottom: 6vh;
+    }
+    .post-image{
+        text-align: center;
+        padding-bottom: 3vh;
+    }
+    
+/* end content style */
