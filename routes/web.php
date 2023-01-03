@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/','\App\Http\Controllers\Main\IndexController')->name('index');
+Route::get('/consultation','\App\Http\Controllers\Consultation\IndexController')->name('consultation.index');
+Route::get('/training','\App\Http\Controllers\Training\IndexController')->name('training.index');
+Route::get('/arrangements','\App\Http\Controllers\Arrangements\IndexController')->name('arrangements.index');
+Route::get('/blog','\App\Http\Controllers\Blog\IndexController')->name('blog.index');
+

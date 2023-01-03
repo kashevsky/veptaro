@@ -17,7 +17,7 @@
             </h2>
         <a name="uslugi"></a>
         <div class="catalog">
-            <a class="catalog__link" href="">
+            <a class="catalog__link" href="{{route('consultation.index')}}">
                 <div class="catalog__item">
                     <img src="img/4.1.jpg" class="catalog__img">
                     <h3>
@@ -25,7 +25,7 @@
                     </h3>
                 </div>
             </a>
-            <a class="catalog__link" href="">
+            <a class="catalog__link" href="{{route('training.index')}}">
                 <div class="catalog__item">
                     <img src="img/4.2.jpg" class="catalog__img">
                     <h3>
@@ -33,7 +33,7 @@
                     </h3>
                 </div>
             </a>
-            <a class="catalog__link" href="">
+            <a class="catalog__link" href="{{route('arrangements.index')}}">
                 <div class="catalog__item">
                     <img src="img/4.3.jpg" class="catalog__img">
                     <h3>     
@@ -41,7 +41,7 @@
                     </h3>
                 </div>
             </a>
-            <a class="catalog__link" href="">
+            <a class="catalog__link" href="{{route('blog.index')}}">
                 <div class="catalog__item">
                     <img src="img/4.4.jpg" class="catalog__img">
                     <h3>

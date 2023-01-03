@@ -7,7 +7,7 @@
 </head>
 <header class="header">
     <div class="container-header">
-        <a href="" class="logo__link">
+        <a href="{{route('index')}}" class="logo__link">
             <div class="logo">
             <p class="logo__text">
                Vep<br>TARO
