@@ -58,27 +58,14 @@
         </video>
     </div>
     <div class="wrapper-side-content--borders">
+        @foreach ($contentSection as $content )
         <h2 class="title--h2">
-            Гадания Таро: обо мне
+            {{$content->h2}}
         </h2>
         <div class="text">
-            <p class="text__paragraph">
-                Приветствую Вас на моем сайте предсказаний! Меня зовут Елена. Я серцифицированный практикующий таролог и преподаватель Таро, рунолог, расстановщик на картах таро.
-            </p>
-            <p class="text__paragraph">
-                Практик по:
-            </p>
-            <ul class="text__list">
-                <li class="text-item">Отливкам на воск и металлы;</li>
-                <li class="text-item">работе с восковой матрицей, свечной магией;</li>
-                <li class="text-item">Расстановкам на Таро;</li>
-                <li class="text-item">Коррекции жизненной энергии с помощью энергетического наполнения через карты Таро;</li>
-                <li class="text-item">Работе в золотом сечении, в энергиях серебра и олова;</li>
-                <li>Работе и созданию стихийных духов-помощников Ифритов.</li>
-            </ul>
-
-        </div>
-        
+            {!! html_entity_decode($content->text) !!}
+        </div> 
+        @endforeach
     </div>
     <br>
 </div>
