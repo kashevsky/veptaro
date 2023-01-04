@@ -198,4 +198,18 @@ li{
 .grid_item h2{
     text-align: center;
 }
-/* ednd blog content style */
+/* end blog content style */
+/* training content style */
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.flex_image img{
+    width: 10vw;
+}
+.flex_text{
+    width: 40vw;
+    margin: 2vh 1vw;
+}
+/* end training content style */
