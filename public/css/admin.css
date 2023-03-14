@@ -1,0 +1,13 @@
+.admin_item img{
+    width: 350px;
+}
+.button_admin{
+    color: black;
+    background-color: goldenrod;
+    text-align: center;
+    padding: 7px 10px 7px 10px;
+    border-radius: 5px;
+    font-family: "nav";
+    font-size: 2.3vh;
+    margin: 1px auto;
+}

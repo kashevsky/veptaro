@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style-type: none; 
+}
+@font-face {
+    font-family: nav; 
+    src: local("nav"), 
+    url(../fonts/nav.ttf); 
+}
+@font-face {
+    font-family: title; 
+    src: local("title"), 
+    url(../fonts/title.otf); 
+}
+/* header style */
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%,transparent 80%),radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    padding: 1vh 5vw;
+    font-family: "nav";
+}
+.logo{
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.logo__image{
+    width: 4.5vw;
+    margin-left: 0.5vw;
+}
+.nav__list {
+    display: flex;
+}
+.nav__list-item{
+    margin-right: 5vw;
+    font-family: 'nav';
+}
+.nav__list-link{
+    color: black;
+}
+.header-socials_image{
+    width: 3vw;
+}
+/* end header style */
+/* Index content style */
+.wrapper-top{
+    background-image: url('../images/background.jpg');   
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .wrapper-content{
+        text-align: center;
+    }
+    .wrapper-content__title{
+        padding-top: 5vh;
+        font-size: 7vh;
+        font-family: 'title';
+    }
+    .button{
+        margin-top: 3vh;
+        color: black;
+        background-color: goldenrod;
+        text-align: center;
+        padding: 7px 10px 7px 10px;
+        border-radius: 5px;
+        font-family: "nav";
+        font-size: 2.3vh;
+    }
+    .background{
+        background-image:url('../images/back.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-top: -1px;
+    }
+    .wrapper-side-content{
+        width: 65vw;
+        margin: 1px auto;
+        padding: 5vh 5vw;
+        background-color: white;
+        border-radius: 10px;
+        
+    }
+    .catalog{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+    }
+    .title--h2{
+        text-align: center;
+        padding: 4vh 0 2vh 0;
+        font-family: 'title';
+        color: goldenrod;
+        font-size: 32px;
+    }
+    .catalog__item{
+        width: 31vw;
+        text-align: center;
+    }
+    .catalog__img{
+        width: 26vw;
+    }
+    .video{
+        text-align: center;
+        padding: 8vh 0;
+    }
+    #video_background2{
+        width: 50vw;
+    }
+    .wrapper-side-content--borders{
+        background-color: white;
+        border-radius: 10px;
+        width: 70vw;
+        margin: 1px auto;
+        padding: 0vh 5vw;
+    }
+    .text{
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        padding-bottom: 6vh;
+    }
+    .post-image{
+        text-align: center;
+        padding-bottom: 3vh;
+    }
+    .image{
+        padding: 0 50px;
+    }
+    .image img{
+        width: 130px;
+    }
+    .flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .diploms_container{
+        background-image: url('../images/back.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; 
+        margin-top: -1px;
+    }
+    .diploms{
+        background-color: white;
+        width: 80vw;
+        margin: 1px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .diplom img{
+        width: 240px;
+    }
+    .footer{
+        background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%,transparent 80%),radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+    }
+    
+/* end Index content style */
+/* Consultation content style */
+.area--black{
+    background-color: black;
+    padding: 13vh 0;
+
+}
+.area--black h1{
+    color: goldenrod;
+    text-align: center;
+    font-size: 7vh;
+    font-family: 'title';
+}
+.area--black h2{
+    color: goldenrod;
+    text-align: center;
+    font-size: 5vh;
+    padding-bottom: 6vh;
+}
+.services{
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.services__item{
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vh;
+}
+.services__image img{
+    width: 200px;
+}
+.services_text{
+    margin-left: 4vw;
+}
+.services_title{
+    color: goldenrod;
+    padding-bottom: 1vh;
+    font-family: 'nav';
+}
+.services_content{
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+.wrapper--white{
+    background-color: white;
+    width: 60vw;
+    margin: 1px auto;
+    border-radius: 10px;
+}
+.wrapper__text{
+    padding: 7vh 5vw;
+    font-size: 18px;
+    text-indent: 25px;
+    line-height: 25px;
+}
+/* end Consultation content style */
+/* Arrangements content style */
+.wrapper--white{
+    padding: 10vh 10vw;
+    font-family: 'Montserrat', sans-serif;
+}
+/* end Arrangements content style */
+/* training content style */
+.flex{
+    display: flex;
+    justify-content: center;
+
+}
+.flex_image img{
+    width: 10vw;
+}
+.flex_text{
+    width: 40vw;
+    margin: 5vh 2vw;
+}
+.image img{
+    width: 5vw;
+    margin: 0 5vw;
+}
+.flex-edit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text_editor{
+    width: 40vw;
+    margin: 1px auto;
+}
+.post{
+    padding: 3vh 0 10vh 0;
+}
+.comments{
+    background-color: azure;
+    border-radius: 10px;
+    padding: 2vh 5vw;
+    margin: 5vh;
+}
+.comment{
+background-color: white;
+padding: 1vh 1vw;
+margin: 1vh 0;
+}
+.user_name p span{
+    font-weight: bold;
+    color: red;
+}
+.comment_text p span{
+    font-weight: bold;
+    color: #8A6E2F;
+}
+.comment_form{
+padding-bottom: 5vh;
+}
+.wrapper-side-content-administrator{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper-side-content-area{
+    height: 40vh;
+    width: 40vw;
+    border-radius: 10px;
+    padding: 4vh 2vw;
+    background-color: white;
+}
+/* end training content style */
