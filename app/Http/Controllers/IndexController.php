@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\IndexSection;
 use App\Models\IndexService;
 use Illuminate\Http\Request;
+use App\Models\ConsultationContent;
 
 class IndexController extends Controller
 {
@@ -21,7 +22,9 @@ class IndexController extends Controller
         switch($link)
         {
             case 'consultacii_tarologa':
-                return 'Консультации таролога';
+                $content = ConsultationContent::first();
+                $sections = $content->sections;
+                return view('consultation.index', compact('content','sections'));
             // ТУТ БУДУТ ЕЩЕ СТРАНИЦЫ
         }
         $service = IndexService::where('link',$link)->first();
