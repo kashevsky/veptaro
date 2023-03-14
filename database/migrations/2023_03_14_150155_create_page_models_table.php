@@ -11,11 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('index_sections', function (Blueprint $table) {
+        Schema::create('page_models', function (Blueprint $table) {
             $table->id();
-            $table->string('h2');
-            $table->string('left_image')->nullable();
-            $table->string('right_image')->nullable();
             $table->longText('content');
             $table->timestamps();
         });
@@ -26,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('index_sections');
+        Schema::dropIfExists('page_models');
     }
 };

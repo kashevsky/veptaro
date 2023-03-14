@@ -16,6 +16,9 @@ return new class extends Migration
             $table->string('image');
             $table->string('h3');
             $table->string('link');
+            $table->unsignedBigInteger('page_id')->nullable();
+            $table->index('page_id');
+            $table->foreign('page_id')->on('page_models')->references('id');
             $table->timestamps();
         });
     }

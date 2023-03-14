@@ -19,7 +19,7 @@
                 </h2>
             <div class="catalog">
                 @foreach ($services as $service )
-                    <a class="catalog__link" href="">
+                    <a class="catalog__link" href="{{route('index.show', $service->link)}}">
                         <div class="catalog__item">
                             <img src="{{$service->image}}" class="catalog__img">
                             <h3>
