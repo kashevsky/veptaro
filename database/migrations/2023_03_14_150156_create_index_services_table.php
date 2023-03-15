@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('index_services', function (Blueprint $table) {
             $table->id();
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->string('h3');
             $table->string('link');
             $table->unsignedBigInteger('page_id')->nullable();

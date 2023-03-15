@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class ConsultationContent extends Model
 {
     use HasFactory;
+    protected $guarded = false;
     public function sections()
     {
         return $this->hasMany(ConsultationSection::class, 'page_id','id');
