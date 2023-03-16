@@ -1,3 +1,54 @@
+/* main page edit */
+.wrapper-side-content--borders{
+    width: 90vw;
+}
+.catalog__link:hover{
+    text-decoration: none;
+}
+.catalog_flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+.catalog__item-admin{
+    width: 300px;
+}
+.catalog__item-admin img{
+    width: 300px;
+}
+
+.title_editor{
+    width: 1600px;
+}
+.image{
+    padding: 0px;
+}
+input[type=file]{
+    padding: 0 20px 0 20px;
+    margin: 0;
+}
+input[type=submit]{
+    margin-top: 3vh;
+    margin-bottom: 7vh;
+    color: black;
+    background-color: goldenrod;
+    text-align: center;
+    padding: 7px 10px 7px 10px;
+    border-radius: 5px;
+    font-family: "nav";
+    font-size: 2.3vh;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+}
+.catalog__item-admin h3{
+    text-align: center;
+    color: black;
+}
+
 .admin_item img{
     width: 350px;
 }
@@ -10,4 +61,7 @@
     font-family: "nav";
     font-size: 2.3vh;
     margin: 1px auto;
+}
+.button_admin a{
+color: black;
 }

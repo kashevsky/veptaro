@@ -8,12 +8,12 @@
                 Услуги предсказаний Таро
                 </h2>
             <div class="catalog">
-                <div style="display:flex; flex-wrap: wrap">
+                <div class="catalog_flex">
                 @foreach ($services as $service )
                     <a class="catalog__link" href="{{$service->link}}">
-                        <div class="catalog__item" style="width: 250px">
-                            <img src="{{$service->image}}" class="catalog__img" style="width: 200px">
-                            <h3 style="font-size: 10px">
+                        <div class="catalog__item-admin">
+                            <img src="{{$service->image}}">
+                            <h3>
                                 {{$service->h3}}
                             </h3>
                         </div>
@@ -40,17 +40,19 @@
         <div class="flex">
             <div class="image">
                 @isset($section->left_image)
-                <img src="{{$section->left_image}}">
+                <img src="{{Storage::url($section->left_image)}}">
                 @endisset
-                    <input type="file" name="left_image">
+                <input type="file" name="<?php echo 'left_image'.$i ?>">
             </div>    
         <h2 class="title--h2">
-                <textarea class="editor" name="<?php echo 'h2'.$i ?>">{{$section->h2}}</textarea>
+                <textarea style="widows: 900px" class="title_editor" name="<?php echo 'h2'.$i ?>">{{$section->h2}}</textarea>
         </h2>
-            <div class="image">
-                <img src="{{$section->right_image}}">
-                    <input type="file" name="right_image">
-            </div> 
+        <div class="image">
+            @isset($section->right_image)
+            <img src="{{Storage::url($section->right_image)}}">
+            @endisset
+            <input type="file" name="<?php echo 'right_image'.$i ?>">
+        </div> 
         </div>
         <div class="text">
                 <textarea class="editor" name="<?php echo 'content'.$i ?>">{{$section->content}}</textarea>
@@ -58,7 +60,9 @@
         <?php $i++ ?>
         @endforeach
         <input type="hidden" name="count" value="{{$i}}">
-        <input type="submit" value="Изменить" style="margin-left: 17vw">
+        <div class="submit">
+            <input type="submit" value="Обновить">
+        </div>
     </form>
     </div>
     </div>
