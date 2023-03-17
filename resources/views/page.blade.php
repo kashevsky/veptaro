@@ -2,7 +2,7 @@
 @section('content')
 <div class="area--black">
     <div class="wrapper--white">
-        {{$content->content}}
+        {!! html_entity_decode($content->content) !!}
     </div>
 </div>
 @endsection

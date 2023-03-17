@@ -3,7 +3,7 @@
 <div class="area--black">
     <h1>Добавление блока</h1>
     <div class="wrapper--white">
-        <form action="{{route('admin.service.store')}}" method="post" enctype="multipart/form-data" >
+        <form action="{{route('admin.service.update',$service->link)}}" method="post" enctype="multipart/form-data" >
             @csrf
             <label>Заголовок</label>
             <br>

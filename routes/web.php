@@ -22,3 +22,4 @@ Route::get('/administration/index/create_service','\App\Http\Controllers\Admin\S
 Route::post('/administration/index/create_service','\App\Http\Controllers\Admin\Service\ServiceController@store')->name('admin.service.store');
 Route::delete('/administration/index/delete_service/{link}','\App\Http\Controllers\Admin\Service\ServiceController@delete')->name('admin.service.delete');
 Route::get('/administration/index/edit_service/{link}','\App\Http\Controllers\Admin\Service\ServiceController@edit')->name('admin.service.edit');
+Route::post('/administration/index/edit_service/{link}','\App\Http\Controllers\Admin\Service\ServiceController@update')->name('admin.service.update');

@@ -177,7 +177,7 @@ li{
     }
     
 /* end Index content style */
-/* Consultation content style */
+/* Pages Content Style */
 .area--black{
     background-color: black;
     padding: 13vh 0;
@@ -236,14 +236,12 @@ li{
     text-indent: 25px;
     line-height: 25px;
 }
-/* end Consultation content style */
-/* Arrangements content style */
+
 .wrapper--white{
     padding: 10vh 10vw;
     font-family: 'Montserrat', sans-serif;
 }
-/* end Arrangements content style */
-/* training content style */
+
 .flex{
     display: flex;
     justify-content: center;
@@ -307,4 +305,15 @@ padding-bottom: 5vh;
     padding: 4vh 2vw;
     background-color: white;
 }
-/* end training content style */
+.button-low{
+    margin: 1px auto;
+    color: black;
+    background-color: goldenrod;
+    width: 200px;
+    text-align: center;
+    padding: 1px 0;
+    font-weight: 500;
+    border-radius: 5px;
+
+}
+/* end pages content style */
