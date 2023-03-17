@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('image')->nullable();
             $table->string('h2');
-            $table->text('content');
+            $table->text('text');
             $table->unsignedBigInteger('page_id');
             $table->index('page_id');
             $table->foreign('page_id')->on('consultation_contents')->references('id');

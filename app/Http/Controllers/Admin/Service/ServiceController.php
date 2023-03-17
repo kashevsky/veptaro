@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers\Admin\Service;
 
+use File;
 use App\Models\Diplom;
 use App\Models\PageModel;
-use File;
 use App\Models\IndexSection;
 use App\Models\IndexService;
 use Illuminate\Http\Request;
+use App\Models\ConsultationContent;
 use App\Http\Controllers\Controller;
 
 class ServiceController extends Controller
@@ -15,6 +16,18 @@ class ServiceController extends Controller
     public function create()
     {
         return view('admin.indexpage.service.create');
+    }
+    public function edit($link)
+    {
+        if($link == 'consultacii_tarologa')
+        {
+            $content = ConsultationContent::first();
+            $sections = $content->sections();
+            return view('admin.consultation.edit',compact('content','sections'));
+        }
+        $service = IndexService::where('link',$link)->first();
+        $page = $service->page;
+        return view('admin.indexpage.service.edit', compact('service','page'));
     }
     public function store(Request $request)
     {
@@ -42,6 +55,14 @@ class ServiceController extends Controller
         $page = PageModel::create($pageData);
         $serviceData['page_id'] = $page->id;
         $service = IndexService::create($serviceData);
-        return redirect()->route('index');
+        return redirect()->back();
+    }
+    public function delete($link)
+    {
+        $service = IndexService::where('link', $link)->first();
+        $page = $service->page;
+        $service->delete();
+        $page->delete();
+        return redirect()->back();
     }
 }

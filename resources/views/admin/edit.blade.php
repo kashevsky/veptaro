@@ -5,11 +5,12 @@
         <div class="wrapper-side-content">
             <h2 class="title--h2">
                 <a name="uslugi"></a>
-                Услуги предсказаний Таро
+                    Услуги предсказаний Таро
                 </h2>
             <div class="catalog">
                 <div class="catalog_flex">
                 @foreach ($services as $service )
+                <div class="admin_catalog_element">
                     <a class="catalog__link" href="{{$service->link}}">
                         <div class="catalog__item-admin">
                             <img src="{{$service->image}}">
@@ -18,6 +19,17 @@
                             </h3>
                         </div>
                     </a>
+                    <form action="{{route('admin.service.delete', $service->link)}}" method="post">
+                        @csrf
+                        @method('delete')
+                        <div class="button_delete">
+                            <input type="submit" value="Удалить">
+                        </div>
+                    </form>
+                    <div class="button_edit">
+                        <a href="{{route('admin.service.edit', $service->link)}}">Редактировать</a>
+                    </div>
+                </div>
                 @endforeach
                 </div>
                 <div class="button_admin">
@@ -45,7 +57,7 @@
                 <input type="file" name="<?php echo 'left_image'.$i ?>">
             </div>    
         <h2 class="title--h2">
-                <textarea style="widows: 900px" class="title_editor" name="<?php echo 'h2'.$i ?>">{{$section->h2}}</textarea>
+                <textarea class="title_editor" name="<?php echo 'h2'.$i ?>">{{$section->h2}}</textarea>
         </h2>
         <div class="image">
             @isset($section->right_image)

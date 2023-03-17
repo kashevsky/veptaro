@@ -42,16 +42,15 @@
         <div class="flex">
             @isset($section->left_image)
             <div class="image">
-                <img src="{{$section->left_image}}">
+                <img src="{{Storage::url($section->left_image)}}">
             </div>      
             @endisset
-
         <h2 class="title--h2">
             {{$section->h2}}
         </h2>
             @isset($section->right_image)
             <div class="image">
-                <img src="{{$section->right_image}}">
+                <img src="{{Storage::url($section->right_image)}}">
             </div> 
             @endisset
         </div>

@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('consultation_contents', function (Blueprint $table) {
             $table->id();
             $table->string('h2');
-            $table->text('content');
+            $table->longText('content');
             $table->timestamps();
         });
     }

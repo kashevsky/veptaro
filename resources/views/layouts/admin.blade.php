@@ -95,4 +95,20 @@
       });
     });
   </script>
+  <script>
+        $(document).ready(function() {
+          $('.editor-long').summernote({
+            width:1000,
+            height:500,
+            toolbar: [
+        // [groupName, [list of button]]
+        ['style', ['bold', 'italic', 'underline', 'clear']],
+        ['font', ['strikethrough', 'superscript', 'subscript']],
+        ['fontsize', ['fontsize']],
+        ['color', ['color']],
+        ['height', ['height']]
+      ]
+          });
+        });
+   </script>
 

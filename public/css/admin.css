@@ -65,3 +65,19 @@ input[type=submit]{
 .button_admin a{
 color: black;
 }
+.wrapper--white{
+    width: 90vw;
+}
+.admin_catalog_element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button_delete input{
+    background-color: red;
+    color: white;
+}
+.services_content{
+    color: black;
+}
